@@ -18,10 +18,9 @@ function initializeArray() {
   }
 }
 
-window.onload = initializeArray();
-
 // Move the carousel based on the positive or negative number parameter
 function arrowCon(n) {
+  initializeArray();
   if (n > 0) {
     moveNext(); // Right arrow
   } else {
