@@ -47,4 +47,11 @@ function arrowCon(n) {
   // alert('cLoc: ' + cLoc + ', cIndex: ' + cIndex); // Debugging
 }
 
-window.onload = injectArray; // Create the image array on page load
+// Load the images on click
+function onStart(){
+  document.addEventListener('click', (event) => {
+    injectArray();
+  })
+}
+
+window.onload = onStart; // Create the image array on page load
