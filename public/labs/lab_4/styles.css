@@ -7,35 +7,35 @@
 
 .flex-outer li {
   display: flex;
-  background-color: pink;
+  /* background-color: pink; */
   align-items: center;
   margin-bottom: 15px;
 }
 
-.flex-outer input {
+.flex-outer input, #message {
   background-color: yellow;
-}
-
-.flex-outer label {
-  background-color: red;
-}
-
-#phon-container {
-  margin-bottom: 5px;
-}
-
-#msg-container {
-  background-color: turquoise;
-  margin-bottom: 20px;
-}
-
-#msg {
-  background-color: gray;
-  margin: auto 0px auto 0px;
 }
 
 #message {
   height: 150px;
+}
+
+.flex-outer label {
+  /* background-color: red; */
+}
+
+#phon-container {
+  margin-bottom: 10px;
+}
+
+#msg-container {
+  /* background-color: turquoise; */
+  margin-bottom: 20px;
+}
+
+#msg {
+  /* background-color: gray; */
+  margin: auto 0px auto 0px;
 }
 
 .flex-outer > li > label,
@@ -53,36 +53,36 @@
 #agecont {
   display: flex;
   float:left;
-  background-color: red;
-  width: 220px;
-  max-width: 220px;
+  /* background-color: red; */
+  width: 200px;
 }
 
 #checkcon {
   display: flex;
-  background-color: red;
+  /* background-color: red; */
   width: 600px;
   margin-bottom: 5px;
 }
 
 #age-string {
-  background-color: grey;
+  /* background-color: grey; */
 }
 
 .flex-inner {
   display: flex;
   width: 600px;
-  background-color: green;
+  /*background-color: green;*/
   justify-content: space-between;
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .flex-outer li button {
   align-items: left;
   padding: 8px 16px;
   border: none;
-  color: black;
+  background: #333;
+  color: yellow;
   text-transform: uppercase;
   letter-spacing: .09em;
   border-radius: 2px;
@@ -94,5 +94,5 @@
 }
 
 body {
-  background-color: rgba(139, 107, 166, 1);
+  background-color: rgb(179, 66, 66);
 }
