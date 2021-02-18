@@ -1,51 +1,70 @@
 .header {
   display: flex;
-  margin: auto;
   justify-content: center;
   color: white;
   /* text-align: center; */
 }
 
-.flex-outer li,
-.flex-inner {
+.flex-outer li, .flex-inner {
   display: flex;
-  flex-wrap: wrap;
-  /* align-items: center; */
+  background-color: pink;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-/* Names */
+.flex-outer input {
+  background-color: yellow;
+}
+
+.flex-outer label {
+  background-color: red;
+}
+
+#phon-container {
+  margin-bottom: 5px;
+}
+
+#msg-container {
+  background-color: turquoise;
+  margin-bottom: 20px;
+}
+
+#msg {
+  background-color: gray;
+  margin: auto 0px auto 0px;
+}
+
 .flex-outer > li > label,
 .flex-outer li p {
   flex: 1 0 120px;
-  margin-left: 5px;
-  justify-content: space-between;
   max-width: 220px;
-  background-color: red;
 }
  
-/* Input boxes */
 .flex-outer > li > label + *,
+.flex-inner{
+  flex: 1 0 220px;
+  display: flex;
+  max-width: 600px;
+}
+
+#age-cont {
+  background-color: blue;
+  display:flex;
+  margin-bottom: 10px;
+}
+
+#age-string {
+  background-color: grey;
+  width: 220px;
+  margin-left: 0;
+  margin-top: 0px;
+}
+
 .flex-inner {
   margin: auto;
-  flex: 1 0 220px;
-  width: 80%;
-  max-width: 600px;
-  display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
-  background-color: blue;
+  background-color: green;
 }
-
-.flex-inner li {
-  width: 100px;
-}
-
-.flex-inner {
-  justify-content: space-between;
-}
-
-
-
 
 .flex-outer li button {
   align-items: left;
