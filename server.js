@@ -44,7 +44,8 @@ app.route('/api')
     console.log('Form data in res.body', req.body);
     console.log('Now send something back to your client');
     //res.json({data: dataToSendToFrontEnd});
-    res.send({data: req.body});
+    //res.send({data: req.body});//
+    res.send('Hello World').status(200);
     res.json(json);
   });
 
