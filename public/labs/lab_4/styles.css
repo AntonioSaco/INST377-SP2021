@@ -2,12 +2,10 @@
   display: flex;
   justify-content: center;
   color: white;
-  /* text-align: center; */
 }
 
 .flex-outer li {
   display: flex;
-  /* background-color: pink; */
   align-items: center;
   margin-bottom: 15px;
 }
@@ -20,21 +18,15 @@
   height: 150px;
 }
 
-.flex-outer label {
-  /* background-color: red; */
-}
-
 #phon-container {
   margin-bottom: 10px;
 }
 
 #msg-container {
-  /* background-color: turquoise; */
   margin-bottom: 20px;
 }
 
 #msg {
-  /* background-color: gray; */
   margin: auto 0px auto 0px;
 }
 
@@ -53,25 +45,18 @@
 #agecont {
   display: flex;
   float:left;
-  /* background-color: red; */
   width: 200px;
 }
 
 #checkcon {
   display: flex;
-  /* background-color: red; */
   width: 600px;
   margin-bottom: 5px;
-}
-
-#age-string {
-  /* background-color: grey; */
 }
 
 .flex-inner {
   display: flex;
   width: 600px;
-  /*background-color: green;*/
   justify-content: space-between;
   margin-top: 0px;
   margin-bottom: 5px;
