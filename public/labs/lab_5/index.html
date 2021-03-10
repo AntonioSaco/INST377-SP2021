@@ -2,8 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title> Tony Saco's Lab 5</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <title> Antonio Saco's Lab 5</title>
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -12,29 +11,32 @@
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 
 <body>
-    <div class ="header">
-        <h1 class="flex-outer" id="Topic">Tony Saco's Lab 5</h1>
-    </div>
+    <h1 class = "has-text-weight-bold is-size-3">Antonio Saco's Lab 5</h1>
+    <p>Zip Code Food Search</p>
     <div class="columns">
-        <div class="column">
+        <div class="column is-one-quarter">
             <div class = "form-container">
-                <form class = "search-form">
-                    <input type="text" class="search" placeholder="Name/City">
-                    <ul class="suggestions">
+                <form class = "search-form" onsubmit="">
+                    <label for="userbox">Search <br></label>
+                    <input type="text" name="userbox" id="userbox" class="search" placeholder="Enter Zipcode">
+                    <button type="submit" id="submit">Submit</button>
+                    <ul class="targetList">
                         
                     </ul>
                 </form>
             </div>
         </div>
-        <div class="column">
-            <p>map</p>
-            <div id="mapid"></div>
+        <div class="column is-one-third">
+            <div id="mapid" style="width: 450px; height:450px;">
+                
+            </div>
         </div>
     </div>
-      
     <script src="script.js"></script>
 </body>
 </html>
