@@ -16,23 +16,27 @@
 </head>
 
 <body>
-    <h1 class = "has-text-weight-bold is-size-3">Antonio Saco's Lab 5</h1>
-    <p>Zip Code Food Search</p>
-    <div class="columns">
+    <div class="columns m-2">
         <div class="column is-one-quarter">
+            <div class = "header mb-3">
+                <h1 class = "has-text-weight-bold is-size-3">Antonio Saco's Lab 5</h1>
+                <h2 class="subtitle">Zip Code Food Search</h2>
+            </div>
             <div class = "form-container">
-                <form class = "search-form" onsubmit="">
-                    <label for="userbox">Search <br></label>
-                    <input type="text" name="userbox" id="userbox" class="search" placeholder="Enter Zipcode">
-                    <button type="submit" id="submit">Submit</button>
-                    <ul class="targetList">
-                        
-                    </ul>
+                <form class = "search-form">
+                    <div class ="has-text-weight-bold mb-1"> <label for="userbox">Search</label> </div>
+                    <div class = "mb-3"><input type="text" name="userbox" id="userbox" class="search" placeholder="Enter Zipcode"></div>
+                    <div class="mb-5 mt-2"><button type="submit" id="submit">Submit</button></div>
                 </form>
             </div>
+            <div class = "results">
+                <ul class="targetList">
+                        
+                </ul>
+            </div>
         </div>
-        <div class="column is-one-third">
-            <div id="mapid" style="width: 450px; height:450px;">
+        <div class="column is-one-quarter">
+            <div id="mapid" style="width: 575px; height:575px;">
                 
             </div>
         </div>
